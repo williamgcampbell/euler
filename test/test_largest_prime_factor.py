@@ -12,8 +12,11 @@ class TestLPF (unittest.TestCase) :
     def test_largest_prime_factor(self) :
         self.assertEqual(lpf(600851475143), 6857)
 
+    def test_largest_prime_factor_edge_case(self):
+        self.assertEqual(lpf(1), None)
+
     @unittest.expectedFailure
-    def test_largest_prime_factor_failure(self):
+    def test_largest_prime_factor_negative_failure(self):
         primeFactor(-4)
 
     @unittest.expectedFailure
