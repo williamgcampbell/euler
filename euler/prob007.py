@@ -1,4 +1,4 @@
-from utils.core import prime_gen
+from utils.sequence import prime_gen
 
 gen = prime_gen()
 for i in range(1, 10001):
